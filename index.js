@@ -5,6 +5,7 @@
 
 const { google } = require('googleapis');
 const { createClient } = require('@supabase/supabase-js');
+const ToneGuide = require('./lib/tone-guide.js');
 
 const supabase = createClient(
   process.env.SUPABASE_URL,
@@ -33,6 +34,7 @@ class EmailAgent {
       FYI: '🟢',
       JUNK: '⚪'
     };
+    this.toneGuide = new ToneGuide();
   }
 
   async checkInbox() {
