@@ -9,7 +9,7 @@
     "analyze-tone": "node analyze-tone.js"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.39.0",
+    "@supabase/supabase-js": "^2.98.0",
     "googleapis": "^131.0.0"
   }
 }
