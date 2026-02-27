@@ -1,0 +1,15 @@
+{
+  "name": "email-agent",
+  "version": "1.0.0",
+  "description": "Email monitoring and intelligence agent for Mat's inbox",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "monitor": "node monitor.js",
+    "analyze-tone": "node analyze-tone.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "googleapis": "^131.0.0"
+  }
+}
